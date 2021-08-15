@@ -1,0 +1,109 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/tabbar-home/tabbar-home",
+			"style": {
+				"navigationBarTitleText": "工具列表"
+			}
+		},
+		{
+			"path": "pages/tabbar/tabbar-follow/tabbar-follow",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-btn/tabbar-btn",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-message/tabbar-message",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-me/tabbar-me",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-btn-detial/tabbar-btn-qa/tabbar-btn-qa",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-btn-detial/tabbar-btn-video/tabbar-btn-video",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-btn-detial/tabbar-btn-release/tabbar-btn-release",
+			"style": {}
+		}
+        ,{
+            "path" : "pages/home-tools/health-code/suikang-code/suikang-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home-tools/health-code/yuekang-code/yuekang-code",
+            "style" : {
+				"navigationBarTitleText":"粤康码",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#4393f4",
+				"backgroundColor":"#4393f4"
+				
+			}
+        }
+        ,{
+            "path" : "pages/home-tools/health-code/national-health-code/national-health-code",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/tabbar/tabbar-home/tabbar-home",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabbar/tabbar-follow/tabbar-follow",
+				"iconPath": "static/img/tabbar/guanzhu.png",
+				"selectedIconPath": "static/img/tabbar/guanzhuactive.png",
+				"text": "关注"
+			},
+			//#ifdef MP-WEIXIN
+			{
+				"pagePath": "pages/tabbar/tabbar-btn/tabbar-btn",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png",
+				"text": "发布"
+			},
+			//#endif
+			//#ifndef MP-WEIXIN
+			{
+				"pagePath": "pages/tabbar/tabbar-btn/tabbar-btn",
+				"iconPath": "static/img/tabbar/add.png",
+				"selectedIconPath": "static/img/tabbar/addactive.png"
+			},
+			//#endif
+			{
+				"pagePath": "pages/tabbar/tabbar-message/tabbar-message",
+				"iconPath": "static/img/tabbar/news.png",
+				"selectedIconPath": "static/img/tabbar/newsactive.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/tabbar/tabbar-me/tabbar-me",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "我"
+			}
+		]
+	}
+}
